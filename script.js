@@ -1,21 +1,21 @@
 const recipes=[
     {
         title:"glazur donut",
-        description:"delicios donut with glazur fr all  famaly",
-        image:"src/donut.png"
+        description:"delicios donut with glaze for all  famaly",
+        image:"src/glaze donut.jpg"
     },
     {
         title:"choco donut",
-        description:"delicios donut with glazur fr all  famaly",
-        image:"src/donut.png"
+        description:"delicios donut with chocolate for all  famaly",
+        image:"src/choco donut.jpg"
     }, {
         title:"vanilla donut",
-        description:"delicios donut with glazur fr all  famaly",
-        image:"src/donut.png"
+        description:"delicios donut with vanilla for all  famaly",
+        image:"src/vanilla donut.jpg"
     }, {
         title:"honey donut",
-        description:"delicios donut with glazur fr all  famaly",
-        image:"src/donut.png"
+        description:"delicios donut with honey for all  famaly",
+        image:"src/honey donut.jpg"
     },
 ]
 
@@ -38,6 +38,7 @@ template_card=(recipe)=>{
             ${recipe.description}
         </p>
         </div>`
+    return card
 }
 
 display_recipes=()=>{
@@ -58,3 +59,4 @@ display_recipes=()=>{
 
 }
 search_button.addEventListener("click",display_recipes)
+window.addEventListener("DOMContentLoaded",display_recipes)
